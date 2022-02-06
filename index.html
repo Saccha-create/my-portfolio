@@ -3,12 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/mainstyle.css" />
+    <link rel="stylesheet" href="./css/mediastyle.css" />
     <title>My Portfolio</title>
   </head>
   <body>
-    <script src="main.js"></script>
+    <div class= "header">
+       <h1>My profile</h1>
+       
+    <ul class = "menu-list">
+      <li>
+        <a href="#main">plofile</a>
+      </li>
+      <li>
+        <a href="#china">My Hometown</a>
+      </li>
+      <li>
+        <a href="#omake">おまけ</a>
+      </li>
+    </div>
+    <div class="first-image",id="first-image">
+      <img class="suzhou", src="./image/image2.jpg">
+      <img class="suzhou", src="./image/LINE_ALBUM_20160509 _1_211115_34.jpg">
+      <img class="suzhou", src="./image/LINE_ALBUM_チャイナに行っチャイナ！！！！！_211115_240.jpg">
+      <img class="suzhou", src="./image/image1.jpg">
+    </div>
+    <div id = "main", class="container">  
+      <div class="center">
+        <ul>
+          <li>
+            <ol>
+              <li>
+              <div class="image-trim">
+                <a href="https://www.kindai.ac.jp/" target="_blank">
+                <img class= "img" data-animate="slideInUp" ,id ="image1", src= "./image/img_01-1.jpg"></a>
+                <div class="mask"><p>University</p></div>
+              </div>
+            </li>
+            <li>
+              <div class="image-trim2">
+                <img class= "img" data-animate="slideInUp" id ="image2", src="./image/image2.jpg">
+              </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>
+                <div class="image-trim">
+                <img class= "img" data-animate="slideInUp" id ="image3", src= "./image/IMG_3300.JPG">
+                </div>
+             </li>
+             <li>
+               <div class="image-trim2">
+                <a href="https://www.the-royalpark.jp/canvas/osakakitahama/" target="_blank">
+                <img class= "img" data-animate="slideInUp" id ="image4", src= "./image//Y361087139.jpg"></a>
+                <div class="mask"><p>Working</p></div>
+              </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>
+                <div class="image-trim">
+                <img class= "img" data-animate="slideInUp" id ="image5", src= "./image/スクリーンショット (15).png">
+                <div class="mask"><p>Game</p></div>
+                </div>
+              </li>
+              <li>
+                <div class="image-trim2"> 
+                <img class= "img"  data-animate="slideInUp" id ="image6", src= "./image/IMG_4016.JPG">
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>
+               <div class="image-trim">
+                <img class= "img" data-animate="slideInUp" id ="image7", src= "./image/LINE_ALBUM_20160509 _1_211115_13.jpg">
+                </div>
+              </li>
+              <li>
+                <div class="image-trim2">
+                <img class= "img" data-animate="slideInUp" id ="image8", src= "./image/IMG_2504.jpg">
+                <div class="mask"><p>Osaka</p></div>
+
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+  <div class ="container", id="sub-container">
+<div class = "hometown", id ="china">My hometown:</div>
+<div id ="suzhou">
+    <ul>
+      <li>
+        <h1>
+          <p>Suzhou</p>
+        </h1>
+        <h2>上海から車で1時間ほどの運河の街です。
+        </h2>
+        <br>
+        <h2>今も古い町並みが残り、人々の生活に根づいています</h2>
+        <br>
+        <h2>私の昔住んでいた場所です</h2>
+        <div class="suzhou2">
+        <img id ="tidu" src="./image/LINE_ALBUM_20160509 _1_211115_66.jpg">
+      　</div>
+</div>
+
+        
+  <div class ="sub-container2">
+    <ol>   
+        <li>
+         <div class = "friend",id = "frinend">About friend </div> 
+          <video class ="image" ,id="video" controls src="./image/message.mp4"></video>
+       </li>
+       <li><div class = "mywork", id = "mywork">My Work: </div>
+          <a href="https://youtu.be/k6KdEUQp4ls"> <img class= "image", id= "youtube" src="./image/youtube.jpg"></a>
+       </li> 
+   </ol>
+</div>
+    <div class="intro">
+    <div class="name " id="fullname">福島咲月</div>
+    <div>Fukushima Satsuki</div>
+    </div>
+    <div class="quiz" id="omake">
+        <h1>"私の昔住んでいたこの場所はどこでしょう？"</h1>
+      </div>
+    <div>
+      <div>
+        <h2 id="quiz-text"></h2>
+        <img id="quiz-image">
+        
+      <div class="button">
+        <button id="choice-1"></button>
+        <button id="choice-2"></button>
+        <button id="choice-3"></button>
+        </div>
+        </div>
+        <div id="feedback"></div>
+      </div>
+  <script src="main.js"></script>
+  
   </body>
 </html>

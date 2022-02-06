@@ -1,0 +1,249 @@
+/*portfolio-site*/
+.header a {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.header {
+  font: italic 1.2em "Fira Sans", serif;
+  z-index: 9999;
+  width: 100%;
+  color: #4e81bf;
+  background-color: #ecd2a5;
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  opacity: 0.8;
+}
+.first-image {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  /*80％を表示、そろえる*/
+  padding-top: 50%;
+}
+.suzhou {
+  min-height: 120vh; /*画面いっぱいに広げる*/
+  position: absolute;
+  opacity: 0;
+  animation: change-img-anim 15s infinite; /*無限ループでINFINITE*/
+  margin: auto; /* 中央寄せ */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.suzhou:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.suzhou:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.suzhou:nth-of-type(3) {
+  animation-delay: 10s;
+}
+.suzhou:nth-of-type(4) {
+  animation-delay: 15s;
+}
+/*30-36％の間で画像が表示される*/
+@keyframes change-img-anim {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*center*/
+.center {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5em;
+}
+.center ul,
+.center ul li ol {
+  list-style-type: none;
+}
+.center ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+.center ul li ol li {
+  display: list-item;
+  padding-top: 30px;
+}
+.center ul li ol li img {
+  width: 300px;
+  height: auto;
+}
+.image-trim {
+  /*位置変更可*/
+  position: relative; /*絶対配置*/
+  /*はみ出したら隠す*/
+  overflow: hidden;
+  /*80％を表示、そろえる*/
+  padding-top: 80%;
+}
+.image-trim img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-trim2 {
+  position: relative; /*下段絶対配置*/
+}
+/*University  Game*/
+.image-trim p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  position: absolute;
+  color: #fdfdfb;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*Working*/
+.image-trim2 p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  position: absolute;
+  color: #fdfdfb;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-trim mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #fdfdfb;
+  top: 0;
+  left: 0;
+}
+/*----------------------------------*/
+.image-trim img:hover .mask {
+  opacity: 1;
+}
+.image-trim img:hover {
+  opacity: 0.5;
+}
+
+.image-trim2 img:hover {
+  opacity: 0.5;
+}
+/*----------------------------------*/
+/*サブコンテナ*/
+#sub-container {
+  background-color: #ecd2a5;
+}
+.image-trim #iamge1 {
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+.friend {
+  font: italic 1.2em "Fira Sans", serif;
+  font-weight: bold;
+  border-bottom: 1.5px solid #4e81bf;
+  color: #4e81bf;
+  font-size: 30px;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+/*ビデオ*/
+.image {
+  max-width: 30%;
+  margin: 0 auto;
+  display: block;
+}
+
+.mywork {
+  font: italic 1.2em "Fira Sans", serif;
+  font-weight: bold;
+  border-bottom: 1.5px solid #4e81bf;
+  color: #4e81bf;
+  font-size: 30px;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+.hometown {
+  font: italic 1.2em "Fira Sans", serif;
+  font-weight: bold;
+  border-bottom: 1.5px solid #4e81bf;
+  color: #4e81bf;
+  font-size: 30px;
+  animation-name: fadein;
+  animation-duration: 3s;
+  padding-top: 2em;
+}
+.suzhou2 {
+  text-align: right;
+}
+p {
+  border-bottom: 0.5px solid #4e81bf;
+}
+#suzhou {
+  font: italic small-caps bold 16px/2 cursive;
+
+  color: #4e81bf;
+}
+#tidu {
+  max-width: 30%;
+  text-align: right;
+}
+@keyframes fadein {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*Name: FUkushima satsuki*/
+#fullname {
+  margin-top: 1em;
+  font-size: 1cm;
+  color: #4e81bf;
+  border-bottom: 1.5px solid #4e81bf;
+}
+.intro {
+  margin-left: 15em;
+  margin-top: 1em;
+  font-size: 1cm;
+  color: #4e81bf;
+  font: italic small-caps bold 16px/2 cursive;
+}
+
+.sub-container2 li ol {
+  display: inline;
+}
+.quiz h1 {
+  font: italic 1.2em "Fira Sans", serif;
+  font-weight: bold;
+  padding-left: 20em;
+}
+#quiz-image {
+  height: 300px;
+  width: 300px;
+}
+.button {
+  display: block;
+  padding-left: 50em;
+  list-style-type: none;
+  font: 20px;
+}
+#station {
+  width: 30%;
+}
