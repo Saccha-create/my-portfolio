@@ -229,21 +229,25 @@ p {
 .sub-container2 li ol {
   display: inline;
 }
-.quiz h1 {
+/*クイズ*/
+.quiz {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font: italic 1.2em "Fira Sans", serif;
   font-weight: bold;
-  padding-left: 20em;
+  padding-top: 3em;
+  padding-bottom: 2em;
 }
 #quiz-image {
-  height: 300px;
-  width: 300px;
+  height: 600px;
+  object-fit: contain;
 }
-.button {
-  display: block;
-  padding-left: 50em;
+.sentaku {
+  display: flex;
   list-style-type: none;
   font: 20px;
-}
-#station {
-  width: 30%;
+  width: 400px;
+  padding: 1em;
+  justify-content: space-around;
 }

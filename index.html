@@ -129,26 +129,26 @@
        </li> 
    </ol>
 </div>
+    <!--自己紹介-->
     <div class="intro">
-    <div class="name " id="fullname">福島咲月</div>
+    <div class="name" id="fullname">福島咲月</div>
     <div>Fukushima Satsuki</div>
     </div>
+    <!--クイズ-->
     <div class="quiz" id="omake">
-        <h1>"私の昔住んでいたこの場所はどこでしょう？"</h1>
-      </div>
-    <div>
+        <h3>Q {{quiz.text}}</h3>
       <div>
-        <h2 id="quiz-text"></h2>
-        <img id="quiz-image">
-        
-      <div class="button">
-        <button id="choice-1"></button>
-        <button id="choice-2"></button>
-        <button id="choice-3"></button>
-        </div>
-        </div>
-        <div id="feedback"></div>
+        <img id="quiz-image" v-bind:src="quizImagePath">
       </div>
+      <div class="sentaku">
+        <button v-for="log in quiz.logs" v-on:click="choiced(log)">
+          {{log.text}}
+        </button>
+      </div>
+        <div>{{feedback}}</div>
+    </div>
+   
+  <script src="https://unpkg.com/vue@next"></script>
   <script src="main.js"></script>
   
   </body>
